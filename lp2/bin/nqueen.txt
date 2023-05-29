@@ -1,0 +1,21 @@
+The N-Queens problem is a classic problem in computer science that involves placing N queens on an N x N chessboard in such a way that no two queens threaten each other. This means that no two queens should share the same row, column, or diagonal.
+
+Two common techniques to solve the N-Queens problem are Branch and Bound and Backtracking. Here's an explanation of how each technique works:
+
+1. Backtracking:
+   - Backtracking is a general algorithmic technique used to systematically search for solutions by exploring all possible candidates.
+   - In the context of the N-Queens problem, backtracking involves recursively trying different positions for each queen and backtracking when a position leads to conflicts.
+   - The algorithm starts by placing the first queen in the first row. It then proceeds to the next row and tries to place the second queen in a valid position.
+   - If a queen can be placed without conflicts, the algorithm moves on to the next row. If a conflict arises, the algorithm backtracks to the previous row and tries a different position.
+   - The process continues until all N queens are placed without conflicts or until all possible configurations have been explored.
+
+2. Branch and Bound:
+   - Branch and Bound is an optimization technique that involves systematically exploring the solution space while keeping track of a lower bound on the optimal solution.
+   - In the context of the N-Queens problem, Branch and Bound involves pruning parts of the search tree that are guaranteed to lead to solutions worse than the current best solution.
+   - The algorithm uses heuristics or lower bound estimation techniques to determine which branches of the search tree should be explored and which can be pruned.
+   - The algorithm starts by placing the first queen in the first row and proceeds to the next row, exploring different positions for each queen.
+   - At each step, the algorithm calculates a lower bound on the number of remaining queens that can be placed without conflicts.
+   - If the lower bound exceeds the number of remaining empty rows, the algorithm prunes the subtree and backtracks to the previous row.
+   - The process continues until all N queens are placed or until all possible configurations have been explored.
+
+Both Backtracking and Branch and Bound can be used to solve the N-Queens problem. Backtracking explores all possible configurations, while Branch and Bound optimizes the search process by pruning unpromising branches. The choice between the two techniques depends on the specific requirements of the problem and the desired trade-off between solution quality and computational efficiency. 

@@ -1,0 +1,13 @@
+1. Create New Project
+2. Activate gcloud Shell
+3. Enable App Engine ADMIN API
+4. Create App Engine
+5. Deploy Application
+
+gcloud projects list
+gcloud config set project tranquil-lore-388111
+gcloud app create
+git clone https://github.com/GoogleCloudPlatform/python-docs-samples
+cd python-docs-samples/appengine/standard_python3/hello_world/
+gcloud app deploy app.yaml
+gcloud app browse

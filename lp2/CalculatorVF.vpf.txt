@@ -1,0 +1,17 @@
+<apex:page controller="Calculator">
+    <apex:form >
+        
+    <apex:pageBlock title="Simple Calculator">
+        <apex:pageBlockButtons location="bottom">
+        	<apex:commandButton value="Addition" action="{!Addition}" styleClass=".btn"/>
+        	<apex:commandButton value="Subtraction" action="{!Subtraction}"/>
+        	<apex:commandButton value="Multiplication" action="{!Multiplication}"/>
+        	<apex:commandButton value="Division" action="{!Division}"/>       
+        </apex:pageBlockButtons>
+
+        <apex:inputText label="Enter First No" html-placeholder="First No" value="{!firstNumber}"/>
+        <apex:inputText label="Enter Second No" html-placeholder="Second No" value="{!secondNumber}"/>
+        <apex:outputText label="Result" value="{!result}"/>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

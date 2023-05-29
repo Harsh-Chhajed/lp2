@@ -1,0 +1,27 @@
+Certainly! Here are some possible questions and answers for a viva related to the Minimum Spanning Tree (MST) algorithm:
+
+Q1: What is a Minimum Spanning Tree?
+A1: A Minimum Spanning Tree is a subgraph of a connected, undirected graph that connects all the vertices with the minimum total edge weight, without forming any cycles.
+
+Q2: What is the significance of finding a Minimum Spanning Tree?
+A2: Finding a Minimum Spanning Tree is useful in various applications, such as designing network layouts, constructing efficient transportation systems, and minimizing the cost of connecting components in a graph.
+
+Q3: What are some algorithms used to find a Minimum Spanning Tree?
+A3: Some popular algorithms used to find a Minimum Spanning Tree are Kruskal's algorithm, Prim's algorithm, and Boruvka's algorithm.
+
+Q4: Explain Kruskal's algorithm for finding a Minimum Spanning Tree.
+A4: Kruskal's algorithm starts with an empty graph and adds edges in ascending order of their weights while ensuring that the added edges do not form cycles. It uses the disjoint-set data structure to efficiently detect cycles.
+
+Q5: Explain Prim's algorithm for finding a Minimum Spanning Tree.
+A5: Prim's algorithm starts with a single vertex and greedily adds the minimum weight edge that connects a vertex in the growing tree to a vertex outside the tree. It continues this process until all vertices are included in the Minimum Spanning Tree.
+
+Q6: What is the time complexity of Kruskal's and Prim's algorithms?
+A6: Both Kruskal's and Prim's algorithms have a time complexity of O(E log V), where E is the number of edges and V is the number of vertices in the graph.
+
+Q7: Can a graph have multiple Minimum Spanning Trees?
+A7: Yes, a graph can have multiple Minimum Spanning Trees if there are multiple edges with the same minimum weight. All such trees will have the same total weight.
+
+Q8: Can Kruskal's algorithm work on a disconnected graph?
+A8: Yes, Kruskal's algorithm can work on a disconnected graph. In such cases, it will find a Minimum Spanning Forest, which consists of multiple Minimum Spanning Trees for each connected component.
+
+These are just a few example questions to help you prepare for a viva on the Minimum Spanning Tree algorithm. Feel free to expand upon these or explore additional concepts related to MST algorithms.
